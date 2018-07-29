@@ -1,0 +1,151 @@
+/*1. Reset--------------------------  */
+
+/* 2 Font指定 -------------------------*/
+body{
+  font-size: 14px;
+  line-height: 1.6;
+  font-weight: normal;
+  color: #333;
+  font-family:-apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
+}
+
+/* 3 Link--------------------------- */
+a:link, a:visited{
+  color: #0099cc;
+  text-decoration: underline;
+}
+
+a:hover, a:active{
+  color: #ccc;
+  text-decoration: underline;
+}
+
+/* header---------------------------- */
+header{
+  width: 950px;
+  display: flex;
+  /* autoとすることで左右のmarginが自動的に調整される */
+  margin: 40px auto 50px;
+}
+
+header h1{
+  margin-right: 40px;
+}
+
+/* 行送りの高さ？を調整して上にくっつくように */
+header p{
+  line-height: 1;
+}
+
+/* nav --------------------------------- */
+nav{
+  width:950px;
+  margin: 0 auto 40px;
+
+}
+nav ul{
+  width: 950px;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav li{
+  width: 150px;
+}
+
+nav li a:link, nav liv a:visited{
+  display: block; /*インライン要素をブロックレベルに変える→下線のばせるし、リンク範囲広げれる*/
+  color: #333;
+  text-decoration: none;
+  font-size: 16px;
+  border-bottom: 1px solid #333;
+  padding-bottom: 8px; /*borderとオブジェクトの内側の間隔を広げる*/
+}
+
+nav li a:hover, nav li a:active{
+  color: #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+/* container----------------------------- */
+#container{
+  width: 950px;
+  margin: 0 auto 40px;
+}
+
+#container h2{
+  margin-bottom: 40px;
+}
+
+/* htmlをdiv追加してから */
+#contents{
+  width: 950px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#contents h3{
+  font-size: 14px;
+  font-weight: bold;
+  border-bottom: 1px solid #333;
+  padding-bottom: 8px;
+  margin-bottom: 12px;
+}
+
+#whatsnew{
+  width: 310px;
+  /* background-color: #f00; */
+}
+
+#whatsnew dt{
+  font-size: 12px;
+  margin-bottom: 8px;
+  color: #666;
+}
+
+#whatsnew dd{
+  border-bottom: 1px solid #333;
+  padding-bottom: 16px;
+  margin-bottom: 8px;
+}
+
+#about{
+  width: 310px;
+  /* background-color: #0f0; */
+}
+
+#about figure{
+  margin-bottom: 16px;
+}
+
+#todaysmenu{
+  width: 310px;
+  /* background-color: #00f; */
+}
+
+#menu-container{
+  width: 310px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#menu01, #menu02{
+  width: 150px;
+}
+
+.morelink{
+  text-align: right;
+}
+
+/* footer--------------------------------- */
+footer{
+  width: 950px;
+  margin: 0 auto 40px;
+  border-top: 1px solid #333;
+  padding-top: 40px;
+}
+
+footer p{
+  font-size: 11px;
+  text-align: right;
+}
